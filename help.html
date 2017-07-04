@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Twitter Brand Guidlines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="help">
+  <div class="sticky">
+    <!-- This is a class to make the header to stick to the top of the page -->
+    <header>
+      <div class="header">
+        <img src="images/twitter-icon.png" height="35" width="43" alt="twitter logo">
+        <h1>Twitter Brand Guidlines</h1>
+      </div>
+      <nav class="nav-collapse">
+        <ul>
+          <li><a href="index.html">Logo</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="typography.html">Typography</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!--sticky-->
+  <div class="wrapper">
+    <div class="container">
+      <h2>Need Help?</h2>
+      <h3>Have any questions?<br>Contact us!</h3>
+      <form action="https://formspree.io/wafm2007@gmail.com" method="POST">
+        <label>Name</label>
+        <input name="name" placeholder="Type Here..">
+        <label>Email</label>
+        <input type="email" name="_replyto" placeholder="Type Here..">
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here.."></textarea>
+        <br>
+        <input class="submit" type="submit" value="Send">
+      </form>
+    </div>
+    <!-- .container-->
+  </div>
+  <!-- .wrapper-->
+  <footer>
+    <p> All rights reserved 2017 © <br> Disclaimer: this website is for educational purposes only</p>
+  </footer>
+  <script src="responsive-nav.min.js"></script>
+  <script>
+    var navigation = responsiveNav('.nav-collapse', {
+      transition: 400,
+      insert: 'after'
+    });
+  </script>
+  <script src="custom.js"></script>
+</body>
+
+</html>

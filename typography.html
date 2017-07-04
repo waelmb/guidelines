@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Twitter Brand Guidlines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="sticky">
+    <!-- This is a class to make the header to stick to the top of the page -->
+    <header>
+      <div class="header">
+        <img src="images/twitter-icon.png" height="35" width="43" alt="twitter logo">
+        <h1>Twitter Brand Guidlines</h1>
+      </div>
+      <nav class="nav-collapse">
+        <ul>
+          <li><a href="index.html">Logo</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="typography.html">Typography</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!--sticky-->
+  <div class="wrapper">
+    <div class="container">
+      <h2>Typography</h2>
+      <h3>Our Typeface</h3>
+      <p>Our typeface is bold, simple, and universal — it is the common thread throughout our brand and allows us to emphasize the voices on Twitter.</p>
+      <p>For the @Username and #Hashtag lockups, we use Helvetica Neue Pro 75 Bold.</p>
+      <p class="typography_example1">Helvetica Neue Pro 75 Bold</p>
+      <p>For Tweet Treatments, we use Helvetica Neue Pro 75 Bold for the name, the Tweet itself, and timestamp, and Helvetica Neue Pro 55 Roman for he @Username.</p>
+      <p class="typography_example2">Helvetica Neue Pro 55 Roman</p>
+    </div>
+    <!-- .container-->
+  </div>
+  <!-- .wrapper-->
+  <footer>
+    <p> All rights reserved 2017 © <br> Disclaimer: this website is for educational purposes only</p>
+  </footer>
+  <script src="responsive-nav.js"></script>
+  <script>
+    var navigation = responsiveNav('.nav-collapse', {
+      transition: 400,
+      insert: 'after'
+    });
+  </script>
+  <script src="custom.js"></script>
+</body>
+
+</html>
