@@ -41,7 +41,9 @@ header img {
 .header {
   display: flex;
 }
-
+img { /* To make images responsive */
+  max-width: 100%;
+}
 /* Styling
 ------------------------------------------*/
 header {
