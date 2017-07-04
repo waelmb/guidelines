@@ -44,6 +44,7 @@ header img {
 img { /* To make images responsive */
   max-width: 100%;
 }
+
 /* Styling
 ------------------------------------------*/
 header {
@@ -227,7 +228,23 @@ p {
 .color_white {
   width: 100%;
   margin: 0;
-  padding: 1em;
+  padding-top: 1em;
+}
+.color_primary h2,
+.color_secondary h2,
+.color_darkGray h2,
+.color_lightGray h2,
+.color_XLightGray h2,
+.color_XXLightGray h2,
+.color_white h3,
+.color_primary h3,
+.color_secondary h3,
+.color_darkGray h3,
+.color_lightGray h3,
+.color_XLightGray h3,
+.color_XXLightGray h3,
+.color_white h3 {
+  padding-left: 1em;
 }
 #color .wrapper {
   padding-top: 4em;
@@ -251,7 +268,7 @@ label {
     margin-top:20px;
 }
 input, textarea {
-	width:439px;
+	width: 250px;
 	background:#efefef;
 	border:1px solid #dedede;
 	padding:10px;
@@ -381,5 +398,8 @@ textarea {
   .logo_images_div {
     flex-direction: row;
     justify-content:space-between;
+  }
+  input, textarea {
+  	width: 500px;
   }
 }
