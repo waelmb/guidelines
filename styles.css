@@ -15,6 +15,38 @@ body {
   font-family: helvetica-neue-lt-std-55-roman;
   src: url(helvetica-neue-lt-std-55-roman.otf);
 }
+/* Animation
+------------------------------------------*/
+.twitter #Layer_2{
+  display: none;
+}
+@keyframes fly_z {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(1000px, 1000px, 0);
+  }
+}
+.twitter:hover {
+  animation: fly_z 6s forwards linear;
+}
+@keyframes flap {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.twitter:hover #Layer_2,
+.twitter:hover #Layer_3 {
+  display: block;
+  animation: flap .6s infinite linear;
+}
 
 /* Layout
 ------------------------------------------*/
@@ -35,8 +67,8 @@ body {
   z-index: 100;
   transition: 1s;
 }
-header img {
-  margin: .5em 1em;
+header svg {
+  margin: 0.8em .5em .5em 1em;
 }
 .header {
   display: flex;
