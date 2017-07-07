@@ -75,6 +75,7 @@ header svg {
 }
 img { /* To make images responsive */
   max-width: 100%;
+  height: auto;
 }
 
 /* Styling
@@ -260,23 +261,17 @@ p {
 .color_white {
   width: 100%;
   margin: 0;
-  padding-top: 1em;
+  padding-top: .1em;
 }
-.color_primary h2,
-.color_secondary h2,
-.color_darkGray h2,
-.color_lightGray h2,
-.color_XLightGray h2,
-.color_XXLightGray h2,
-.color_white h3,
-.color_primary h3,
-.color_secondary h3,
-.color_darkGray h3,
-.color_lightGray h3,
-.color_XLightGray h3,
-.color_XXLightGray h3,
-.color_white h3 {
-  padding-left: 1em;
+#color .wrapper h2,
+#color .wrapper h3  {
+  padding-left: 2em;
+}
+#color .wrapper ul li {
+  padding-left: 0em;
+}
+.color_primary {
+  padding-top: 1.5em;
 }
 #color .wrapper {
   padding-top: 4em;
@@ -427,6 +422,13 @@ textarea {
   }
   #color .wrapper {
     padding-top: 7em;
+  }
+  #color .wrapper ul li,
+  #color .wrapper h2 {
+    padding-left: 6em;
+  }
+  #color .wrapper h3 {
+    padding-left: 7em;
   }
   .container {
     width: 75%;
